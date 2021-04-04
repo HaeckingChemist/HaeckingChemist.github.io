@@ -1,0 +1,191 @@
+body {
+    background-image:url(obrazky/pozadi3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#150655;
+    font-family: 'Bevan', cursive;
+    margin:0;
+}
+
+#hra {
+    display: none;
+    width: 900px;
+    height: 600px;
+    background-image: url('obrazky/pozadi2.png');
+    background-size: 100% 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative
+}
+
+#zajic {
+    position:absolute;
+    top:10px;
+    left:300px;
+    width:130px;
+}
+
+#robot {
+    position:absolute;
+    top:495px;
+    left:200px;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    margin: 20px auto 10px auto;
+}
+
+h1 {
+    text-align: center;
+    line-height: 0;
+    margin: 0;
+}
+
+header img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+#pocet,
+#cas {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+
+#hra img {
+    position:absolute;
+}
+
+#uvod,
+#konec {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height:600px;
+    background-image: url('obrazky/pozadi2.png');
+    background-size: 100% 100%;
+}
+
+.obsah {
+    width: 60%;
+    text-align: center;
+}
+
+button {
+    margin-top: 30px;
+    padding: 20px 30px;
+    font-family: 'Bevan', cursive;
+    font-size: 36px;
+    line-height: 1;
+    border-radius: 60px;
+    border:5px solid #ffc04b;
+    color: white;
+    background: linear-gradient(to bottom, #275786, #0e234d);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    outline: 0;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #3677af, #234f79);
+}
+
+button:active {
+    transform: translate(3px 3px);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+}
+
+#vysledek {
+    color: #4d1006;
+}
+
+
+.vir {
+    position: relative;
+    animation: virbeat 2s infinite;
+    margin:0 auto;
+}
+.vir:before,
+.vir:after {
+    position: absolute;
+    content: "";
+    
+    background: #b20006;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.vir:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+
+
+@keyframes virbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+.footer {
+    background-color: rgb(48, 33, 30);
+	background-size: 100%;
+    font-size:15px;
+    width:100%;
+	margin:0px;
+	padding:5px 0px;
+	text-align:center;
+	color:#ffffff;
+	text-shadow: 2px 2px #424242;
+    font-family: 'Lora', serif;
+    font-weight:normal;
+}
