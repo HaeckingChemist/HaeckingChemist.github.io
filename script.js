@@ -162,7 +162,7 @@ function umistiObjekt(herniObjekt) {
 
     //vytvoříme nový element pro obrázek dárku
     let obrazek = document.createElement('img');
-    obrazek.src = 'obrazky/vejce' + nahodneCislo(1,3) + '.png';
+    obrazek.src = 'vejce' + nahodneCislo(1,3) + '.png';
     
     //přidejme obrázek dárku na herní plochu
         hra.element.appendChild(obrazek);
@@ -201,7 +201,7 @@ function umistiObjekt(herniObjekt) {
 
     //vytvoříme nový element pro obrázek viru
     let obrazek = document.createElement('img');
-    obrazek.src = 'obrazky/vir.png';
+    obrazek.src = 'vir.png';
     obrazek.className='vir';
     
     //přidejme obrázek viru na herní plochu
