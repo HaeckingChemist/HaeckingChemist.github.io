@@ -1,0 +1,63 @@
+/*
+Bootstrap 4 breakpointy: 576px, 768px, 992px, 1200px
+xs: (max-width: 575px)
+sm: (min-width: 576px) and (max-width: 767px)
+md: (min-width: 768px) and (max-width: 991px)
+lg: (min-width: 992px) and (max-width: 1199px)
+xl: (min-width: 1200px)
+
+
+/* --- pod tuto čáru piš svoje CSS --------------------------------------- */
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+body {
+	font-family: 'Lora', serif;
+ 	background-image: url("../images/uvod3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin:0;
+	padding:0;
+}
+
+h1 {
+	font-family:'Dancing Script', cursive;
+	font-size:80px;
+	margin:0;
+	padding:60px;
+	color:#088b13;
+	text-shadow: 2px 2px #02330e;
+}
+
+.footer {
+	font-size:15px;
+	margin:0;
+	padding:0;
+	color:#ffffff;
+	text-shadow: 2px 2px #424242;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:auto;
+  }
+
+  img {
+	border-radius: 10px;
+}
+
+footer {
+	background-color: rgb(48, 33, 30);
+	background-size: 100%;
+	width:100%;
+	margin:0px;
+	padding:5px;
+	text-align:center;
+}
+
